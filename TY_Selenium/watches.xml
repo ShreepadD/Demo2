@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<include name="smoke"></include>
+			<include name="function"></include>
+			<include name="regression"></include>
+			<include name="integration"></include>
+		</run>
+	</groups>
+  <test thread-count="5" name="Test" parallel="classes">
+    <classes>
+      <class name="dummy.Ethos"/>
+      <class name="dummy.rado"/>
+      <class name="dummy.Police"/>
+      <class name="dummy.fossil"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

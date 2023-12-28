@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test1" parallel="classes">
+	  <parameter name="bro" value="Chrome"></parameter>
+    <classes>
+      <class name="TestNGCrossBrowser.KhanSir"/>
+      <class name="TestNGCrossBrowser.CourseEra"/>
+      <class name="TestNGCrossBrowser.Scaler"/>
+      <class name="TestNGCrossBrowser.Unacademy"/>
+      <class name="TestNGCrossBrowser.Udemy"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test2" parallel="classes">
+	  <parameter name="bro" value="safari"></parameter>
+    <classes>
+      <class name="TestNGCrossBrowser.KhanSir"/>
+      <class name="TestNGCrossBrowser.CourseEra"/>
+      <class name="TestNGCrossBrowser.Scaler"/>
+      <class name="TestNGCrossBrowser.Unacademy"/>
+      <class name="TestNGCrossBrowser.Udemy"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
